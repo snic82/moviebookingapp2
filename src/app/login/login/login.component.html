@@ -1,0 +1,18 @@
+<mat-card>
+    <mat-card-title>Login</mat-card-title>
+    <mat-card-content>
+      <form (ngSubmit)="login()">
+        <mat-form-field>
+          <input matInput placeholder="Username" name="username" [(ngModel)]="username" required>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Password" name="password" type="password" [(ngModel)]="password" required>
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit">Login</button>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <a routerLink="/forgot-password">Forgot Password?</a>
+    </mat-card-actions>
+  </mat-card>
+  
